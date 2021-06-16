@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Smart Fridge</string>
+    <string name="enableBluetooth">Please enable Bluetooth in order to find the fridge</string>
+    <string name="enableBluetoothButton">Enable Bluetooth</string>
+    <string name="pairWithFridge">In order to connect to the fridge you need to pair your device</string>
+    <string name="pairWithFridgeInstructions">(Connect to the Device "HC-05" with password "1234")</string>
+    <string name="pairWithFridgeButton">I have paired my device with the fridge</string>
+    <string name="standInRange">Please stand in range of the fridge in order to connect</string>
+    <string name="connectButton">Connect to the fridge</string>
+    <string name="updateTargetTempButton">Send the updated target temperature to the Fridge</string>
+    <string name="updateTargetTempInstructions">Select the new target temperature for the Fridge </string>
+    <string name="updateTargetOffsetInstructions">Select the new offset for the target temperature</string>
+    <string name="Disconnect">Disconnect</string>
+</resources>
