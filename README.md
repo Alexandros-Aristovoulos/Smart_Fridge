@@ -15,7 +15,7 @@ The DHTxx sensors have four pins, VCC, GND, data pin and a not connected pin whi
 the data line high and in order to enable the communication between the sensor and the Arduino Board. There are some versions of these sensors that come with 
 a breakout boards with built-in pull-up resistor and they have just 3 pins.
 
-<img src="images/connect_dht22.jpg">
+<img src="images/connect_dht22.png">
 
 ### Connecting the relay (the "Fancy Switch")
 Connect the Ground of the relay to the Ground of the arduino and use Pin 8 from arduino as the control input for the relay. It's a good practice to power the relay by an 
