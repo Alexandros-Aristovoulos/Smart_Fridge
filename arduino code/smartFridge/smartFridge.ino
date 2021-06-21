@@ -73,25 +73,25 @@ void loop() {
   if (t < targetTemp - offset) {
     digitalWrite(power, HIGH);
     prevStatus = true;
-    lcd.print("(OFF)");
+    lcd.print("N");
     Serial.println("OFF");
   } //turn on
   else if (t > targetTemp + offset) {
     digitalWrite(power, LOW);
     prevStatus = false;
-    lcd.print("(ON)");
+    lcd.print("Y");
     Serial.println("ON");
   } else {
     //continue what you were doing
     if (prevStatus) {
       digitalWrite(power, HIGH);
       prevStatus = true;
-      lcd.print("(OFF)");
+      lcd.print("Y");
       Serial.println("OFF");
     } else {
       digitalWrite(power, LOW);
       prevStatus = false;
-      lcd.print("(ON)");
+      lcd.print("Y");
       Serial.println("ON");
     }
   }
