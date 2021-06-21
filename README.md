@@ -46,11 +46,15 @@ to adjust the contrast.
 
 | LCD           | Arduino       |
 | ------------- |-------------  |
-| D4-D7         | Pins 4-7      | 
-| Enable        | Pin 3         | 
+| GND           | GND           | 
+| VCC           | 5V            |
+| Vo            | Potentiometer |
 | RS            | Pin 2         |
 | R/W           | GND           |
-| Vo            | Potentiometer |
+| Enable        | Pin 3         | 
+| D4-D7         | Pins 4-7      | 
+| A (Anode)     | 5V            | 
+| K (Kathode)   | GND           | 
 
 <img src="images/lcd.png">
 <img src="images/connect_lcd.png">
