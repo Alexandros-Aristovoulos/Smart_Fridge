@@ -15,11 +15,23 @@ The DHTxx sensors have four pins, VCC, GND, data pin and a not connected pin whi
 the data line high and in order to enable the communication between the sensor and the Arduino Board. There are some versions of these sensors that come with 
 a breakout boards with built-in pull-up resistor and they have just 3 pins.
 
+| DHT22         | Arduino       |
+| ------------- | ------------- |
+| VCC           | 5V            | 
+| Data Pin      | Pin 8 in parrallel with 5k resistor and 5V (look at the picture)|
+| GND           | GND           | 
+
+
 <img src="images/connect_dht22.png">
 
 ### Connecting the relay (the "Fancy Switch")
 Connect the Ground of the relay to the Ground of the arduino and use Pin 8 from arduino as the control input for the relay. It's a good practice to power the relay by an 
 external 5V source but you can also use the 5V and ground of the arduino.
+
+| Relay         | Arduino       |
+| ------------- | ------------- |
+| VCC           | 5V            | 
+| In1           | Pin 12        | 
 
 <img src="images/connect_relay.png">
 <img src="images/relay_circuit.png">
@@ -32,12 +44,27 @@ The LCD’s registers from D4 to D7 will be connected to Arduino’s digital pin
 and the RS pin will be connected to pin number 2. The R/W pin will be connected to Ground and the Vo pin will be connected to the potentiometer 
 to adjust the contrast.
 
+| LCD           | Arduino       |
+| ------------- |-------------  |
+| D4-D7         | Pins 4-7      | 
+| Enable        | Pin 3         | 
+| RS            | Pin 2         |
+| R/W           | GND           |
+| Vo            | Potentiometer |
+
 <img src="images/lcd.png">
 <img src="images/connect_lcd.png">
 
 ### Connecting the Bluetooth
 We connect arduino's RX and TX pins to the TX and RX pins of the bluetooth module. Be careful with the pin names. If you connect RX to RX and TX to TX the arduino module
 receive any data from the arduino.
+
+| Bluetooth     | Arduino       |
+| ------------- | ------------- |
+| RX            | TX (Pin 1)    | 
+| TX            | RX (Pin 0)    |  
+| GND           | GND           | 
+| 5V            | 5V            | 
 
 <img src="images/connect_bluetooth.png">
 
